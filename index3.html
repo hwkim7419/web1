@@ -2,21 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
       body {
         display: flex;
         align-items: center;
         justify-content: center;
-
+        margin: 0;
       }
       .container {
         display: flex;
         flex-direction: column;
         width: 1000px;
       }
-      header {
+      .top {
+        display: flex;
         border-bottom: 1px solid lightgray;
-        padding-left: 10px;
+        padding-left: 0;
       }
       footer {
         border-top: 1px solid lightgray;
@@ -26,16 +29,11 @@
         border-right: 1px solid lightgray;
         align-items: center;
       }
-      h1 {
-        margin-top: 3px;
-        margin-bottom: 10px;
-        font-size: 20px;
-      }
       nav ul {
         display: flex;
-        margin-top: 2px;
-        margin-bottom: 5px;
-        padding-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 5px;
         list-style-type: none;
         background-color: white;
       }
@@ -43,14 +41,14 @@
         padding-left: 10px;
         padding-right: 10px;
         border-right: 1px lightgray solid;
-        flex-basis: 50px;
+        flex-basis: 70px;
         flex-shrink: 0;
       }
       #mainimg1 {
         width: 100%;
       }
       main {
-        padding: 10px;
+        padding: 0;
       }
       footer {
         text-align: center;
@@ -61,9 +59,22 @@
   <body>
     <div class="container">
       <header>
-        <h1>바른정플란트치과</h1>
+        <!-- Sidebar -->
+        <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+          <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+          <a href="#" class="w3-bar-item w3-button">Link 1</a>
+          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+          <a href="#" class="w3-bar-item w3-button">Link 3</a>
+          <a href="#" class="w3-bar-item w3-button">Link 4</a>
+        </div>
+        <div class="top">
+          <button class="w3-button w3-xxlarge" onclick="w3_open()">☰</button>
+          <h1>바른정플란트치과</h1>
+        </div>
       </header>
       <section class="content">
+
+
         <nav>
           <ul>
             <li><a href="">item 1</a></li>
@@ -83,5 +94,13 @@
         <a href="">홈페이지</a>
       </footer>
     </div>
+    <script>
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
   </body>
 </html>
