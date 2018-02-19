@@ -13,7 +13,6 @@
       img {
         vertical-align: middle;
       }
-
       body {
         display: flex;
         align-items: center;
@@ -38,19 +37,16 @@
       h1 {
         font-size: 20px;
         font-weight: bold;
-
       }
       a:link {
         text-decoration: none;
       }
-
       /* Slideshow container */
       .slideshow-container {
         max-width: 1000px;
         position: relative;
         margin: auto;
       }
-
       /* The dots/bullets/indicators */
       .dot {
         height: 15px;
@@ -64,7 +60,6 @@
       .active {
         background-color: #717171;
       }
-
       /* Fading animation */
       .fade {
         -webkit-animation-name: fade;
@@ -80,12 +75,10 @@
         from {opacity: .4}
         to {opacity: 1}
       }
-
       /* On smaller screens, decrease text size */
       @media only screen and (max-width: 300px) {
         .text {font-size: 11px}
       }
-
       footer {
         border-top: 1px solid rgb(240, 240, 240);
         padding: 20px;
@@ -117,8 +110,19 @@
       footer {
         text-align: center;
       }
+      #flexcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .fc {
+        width: 180px;
+        margin: 10px;
+
+      }
+
     </style>
-    <title></title>
+    <title>바른정플란트치과</title>
   </head>
   <body>
     <div class="container">
@@ -150,25 +154,15 @@
 
         <main>
           <div class="slideshow-container">
-
-          <div class="mySlides fade">
-
-            <img src="main2.jpg" style="width:100%">
-
-          </div>
-
-          <div class="mySlides fade">
-
-            <img src="main3.jpg" style="width:100%">
-
-          </div>
-
-          <div class="mySlides fade">
-
-            <img src="main4.jpg" style="width:100%">
-
-          </div>
-
+            <div class="mySlides fade">
+              <img src="main2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="main3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="main4.jpg" style="width:100%">
+            </div>
           </div>
           <br>
 
@@ -177,9 +171,22 @@
             <span class="dot"></span>
             <span class="dot"></span>
           </div>
+          <div id="flexcontainer">
+            <div class="fc">
+              <img src="info/info1.jpg" style="width:100%">
+            </div>
+            <div class="fc">
+              <img src="info/info2.jpg" style="width:100%">
+            </div>
+            <div class="fc">
+              <img src="info/info3.jpg" style="width:100%">
+            </div>
+            <div class="fc">
+              <img src="info/info4.jpg" style="width:100%">
+            </div>
 
-            Lorem et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </main>
+          </div>
+          </main>
 
       </section>
       <footer>
@@ -193,10 +200,8 @@
       function w3_close() {
         document.getElementById("mySidebar").style.display = "none";
       }
-
       var slideIndex = 0;
       showSlides();
-
       function showSlides() {
           var i;
           var slides = document.getElementsByClassName("mySlides");
@@ -213,15 +218,6 @@
           dots[slideIndex-1].className += " active";
           setTimeout(showSlides, 3000); // Change image every 2 seconds
       }
-
-
-
-
-
-
-
-
-
     </script>
   </body>
 </html>
