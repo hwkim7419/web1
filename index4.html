@@ -27,7 +27,7 @@
       }
       .top {
         display: flex;
-        border-bottom: 1px solid rgb(240, 240, 240);
+        border-bottom: 1px solid #b4b4b4;
         padding-left: 0;
         padding-top: 3px;
       }
@@ -79,10 +79,7 @@
       @media only screen and (max-width: 300px) {
         .text {font-size: 11px}
       }
-      footer {
-        border-top: 1px solid rgb(240, 240, 240);
-        padding: 20px;
-      }
+
       .content nav {
         align-items: center;
       }
@@ -108,6 +105,8 @@
         padding: 0;
       }
       footer {
+        border-top: 1px solid #b4b4b4;
+        padding: 20px;
         text-align: center;
       }
       #flexcontainer {
@@ -118,9 +117,18 @@
       .fc {
         width: 170px;
         margin: 5px;
-
       }
-
+      .location {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+      }
+      address {
+        font-size: 11px;
+        color: gray;
+        font-weight: bold;
+      }
     </style>
     <title>바른정플란트치과</title>
   </head>
@@ -184,13 +192,23 @@
             <div class="fc">
               <img src="info/info4.jpg" style="width:100%">
             </div>
-
           </div>
-          </main>
-
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </main>
+          <div style="text-align: center; font-size: 15px; font-weight: bold;">
+            오시는길
+          </div>
+          <div class="location">
+            <img src="info/adress.jpg" style="width: 90%">
+          </div>
       </section>
       <footer>
-        <a href="">홈페이지</a>
+        <address>
+        바른정플란트치과의원 북구화명점<br>
+        대표자 : 김형우<br>
+        사업자번호 : 606-39-04901<br>
+        주소 : 부산광역시 북구 화명동 977-5
+        </address>
       </footer>
     </div>
     <script>
