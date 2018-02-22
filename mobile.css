@@ -97,11 +97,10 @@ footer {
   width: 170px;
   margin: 5px;
 }
-.location {
+#footerimg {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
 }
 address {
   font-size: 11px;
