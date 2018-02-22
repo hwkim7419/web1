@@ -45,6 +45,7 @@ div.scrollmenu a:hover {
 .slideshow-container {
   position: relative;
   margin: auto;
+  padding-bottom: 5px;
 }
 /* The dots/bullets/indicators */
 .dot {
