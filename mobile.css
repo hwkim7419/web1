@@ -40,9 +40,11 @@ div.scrollmenu a {
     padding: 14px;
     font-weight: bold;
 }
+/*
 div.scrollmenu a:hover {
     background-color: #777;
 }
+/*
 /* Slideshow container */
 .slideshow-container {
   position: relative;
