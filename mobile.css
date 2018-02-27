@@ -95,13 +95,11 @@ footer {
 #flexcontainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  box-shadow: 3px 3px black;
+  justify-content: center;;
 }
 .fc {
   width: 170px;
-  margin: 5px;
-  background-color: rgb(250,250,250);
+  margin: 5px;;
 }
 #footerimg {
   display: block;
