@@ -7,7 +7,32 @@
     <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
-
+    #news {
+    border-bottom: 7px solid rgb(230,230,230);
+    }
+    #news h2 {
+      font-size: 16px;
+      font-weight: bold;
+      padding: 5px 5px 5px 15px;
+      margin-bottom: 2px;
+    }
+    #newslist {
+      list-style-type: none;
+      font-size: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-top: 2px;
+    }
+    #newslist li {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid rgb(230,230,230);
+    }
+    #bar {
+      width: 100%;
+      height: 7px;
+      background-color: rgb(230,230,230);
+    }
     </style>
     </head>
     <body>
@@ -42,11 +67,11 @@
           <div class="scrollmenu">
             <a href="main.html">홈</a>
             <a href="1.html">소개</a>
-            <a href="2.html" style="border-bottom: 3px solid orange;">의료진</a>
+            <a href="2.html">의료진</a>
             <a href="3.html">경쟁력</a>
             <a href="4.html">이벤트</a>
             <a href="5.html">위치</a>
-            <a href="6.html">정보</a>
+            <a href="6.html" style="border-bottom: 3px solid orange;">정보</a>
             <!--
             <a href="https://blog.naver.com/3652275" target="_blank" style="padding: 0;">
               <img src="info/blogimg.png" style="height: 44px; padding-right: 8px; padding-left: 8px;">
@@ -59,9 +84,31 @@
         </nav>
 
         <main>
+          <div id="news">
+            <h2>치과 상식 뉴스</h2>
+          </div>
           <div>
-            <div>
-              <img src="info/2htmlimg.jpg" style="width: 100%">
+            <ul id="newslist">
+              <li><a href="http://www.ibabynews.com/news/articleView.html?idxno=62450" target="_blank">3살 이후, 양치질은 어떻게 가르쳐 줄까요?</a></li>
+              <li><a href="http://www.yjinews.com/news/articleView.html?idxno=44925" target="_blank">치아 홈메우기 본인 부담금 인하</a></li>
+              <li><a href="http://www.yonhapnews.co.kr/bulletin/2018/01/10/0200000000AKR20180110112000017.HTML" target="_blank">7월부터 노인임플란트 본인부담금</a></li>
+              <li><a href="http://www.huffingtonpost.kr/entry/drink-teeth_kr_5a936e99e4b0ee6416a48bc7" target="_blank">당신이 즐겨 마시는 음료들이 치아에 미치는 악영향</a></li>
+            </ul>
+          </div>
+          <div id="bar">
+          </div>
+          <div id="flexcontainer">
+            <div class="fc">
+              <img src="info/info1.jpg" style="width:100%">
+              <p style="font-size: 12px; margin-top: 2px;">
+                건강한 치아관리를 위한 10가지 꼭 알아두어야 할 것들...
+              </p>
+            </div>
+            <div class="fc">
+              <img src="info/info2.jpg" style="width:100%">
+              <p style="font-size: 12px; margin-top: 2px;">
+                건강한 치아관리를 위한 10가지 꼭 알아두어야 할 것들...
+              </p>
             </div>
           </div>
         </main>
