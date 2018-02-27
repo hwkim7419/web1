@@ -96,10 +96,12 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  box-shadow: 3px 3px black;
 }
 .fc {
   width: 170px;
   margin: 5px;
+  background-color: rgb(250,250,250);
 }
 #footerimg {
   display: block;
