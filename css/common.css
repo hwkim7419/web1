@@ -1,0 +1,27 @@
+
+
+
+
+#wrap{
+	width:100%;
+	}
+	
+.fixed{
+	width:100%;
+	position:fixed;
+	background:url(db_bg_area.png);
+	}
+
+
+.content{
+	height:1300px;
+	}
+	.content ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+		.content ul li{
+			text-align:center;
+			margin-top:-4px;
+			}
